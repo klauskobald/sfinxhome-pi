@@ -1,0 +1,12 @@
+# do not change
+# this is automatically set up by setup.sh
+
+
+# hourly
+1 * * * * /bin/bash /home/pi/sfinxhome-pi/sfinxiptv/push_to_my_server.sh > /var/log/sfinxhome/push.log
+
+# daily in the night
+1 6 * * * /bin/bash /home/pi/sfinxhome-pi/update.sh
+0 1 * * * timedatectl --adjust-system-clock
+1 5 * * * sudo reboot
+
