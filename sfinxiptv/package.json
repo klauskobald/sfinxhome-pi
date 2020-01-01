@@ -10,5 +10,8 @@
   "license": "ISC",
   "devDependencies": {
     "dotenv": "^8.2.0"
+  },
+  "dependencies": {
+    "internet-available": "^1.0.0"
   }
 }
