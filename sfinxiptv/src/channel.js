@@ -46,7 +46,7 @@ class ChannelTool {
         ch.sessionId = sessionId;
         ch.updated = new Date();
         if (savenow) {
-            console.log("new status:",s);
+            console.log(ch.name,"new status:",s);
             this.saveChannel(ch);
         }
     }
